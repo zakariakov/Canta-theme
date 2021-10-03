@@ -4313,7 +4313,8 @@ button.emoji-section:last-child {
 /************
  * Nautilus *
  ************/
-.nautilus-window,
+
+.nautilus-window:dir(ltr),
 .nautilus-window notebook,
 .nautilus-window notebook > stack {
   background-image: -gtk-scaled(url("assets/background-img-bottom.png"), url("assets/background-img-bottom@2.png"));
@@ -4321,10 +4322,24 @@ button.emoji-section:last-child {
   background-position: top right;
 }
 
-.nautilus-window headerbar {
+.nautilus-window:dir(rtl),
+.nautilus-window notebook,
+.nautilus-window notebook > stack {
+  background-image: -gtk-scaled(url("assets/background-img-bottom-rtl.png"), url("assets/background-img-bottom-rtl@2.png"));
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.nautilus-window:dir(ltr) headerbar {
   background-image: -gtk-scaled(url("assets/background-img-top-dark.png"), url("assets/background-img-top-dark@2.png"));
   background-repeat: no-repeat;
   background-position: bottom right;
+}
+
+.nautilus-window:dir(rtl) headerbar {
+  background-image: -gtk-scaled(url("assets/background-img-top-dark-rtl.png"), url("assets/background-img-top-dark-rtl@2.png"));
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 
 .nautilus-window headerbar .path-bar-box .linked.nautilus-path-bar > button, .nautilus-window headerbar .path-bar-box button.flat.text-button.toggle,
