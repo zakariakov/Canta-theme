@@ -105,6 +105,8 @@ so if you want a better experience you should install numix-circle first
 [Canta-kde](https://github.com/vinceliuice/Canta-kde)
 
 ## Screenshots
+#### Nautlus Rtl dir
+![1](https://github.com/zakariakov/Canta-theme/blob/master/canta-nautilus-rtl.png?raw=true)
 #### GNOME Shell
 ![1](https://github.com/vinceliuice/Canta-theme/blob/images/screenshots/screenshot1.png?raw=true)
 ![2](https://github.com/vinceliuice/Canta-theme/blob/images/screenshots/screenshot2.jpeg?raw=true)
